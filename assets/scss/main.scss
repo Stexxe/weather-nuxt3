@@ -2,3 +2,30 @@ body {
   background: #A9B9C2;
   font-family: "SF Pro Text", sans-serif;
 }
+
+.icon-big {
+  width: 36px;
+  height: 36px;
+}
+
+.icon-medium {
+  width: 36px;
+  height: 36px;
+  transform: scale(80%);
+}
+
+.icon-weather-rain {
+  background: url('~/assets/icons/rain.svg') no-repeat;
+}
+
+.icon-weather-snow {
+  background: url('~/assets/icons/snow.svg') no-repeat;
+}
+
+.icon-weather-clouds {
+  background: url('~/assets/icons/clouds.svg') no-repeat;
+}
+
+.icon-weather-clear {
+  background: url('~/assets/icons/clear.svg') no-repeat;
+}
