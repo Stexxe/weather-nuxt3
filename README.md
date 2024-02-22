@@ -1,75 +1,25 @@
-# Nuxt 3 Minimal Starter
+# Weather widget
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Written in Nuxt3.
 
-## Setup
+## Trying out
 
-Make sure to install the dependencies:
+Install the dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+Make a copy of the [.env.example](.env.example) file and rename it to `.env`:
+```bash
+cp .env.example .env
+```
+
+Edit the `.env` file to put the API KEY from `openweathermap.org` into the value of the `API_KEY` variable.
+You can use the `2f2175cde76061f6b76ede759837e776` key if you don't have the account.
 
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
