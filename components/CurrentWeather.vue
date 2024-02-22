@@ -47,8 +47,6 @@
 </template>
 
 <style scoped lang="scss">
-  @use "~/assets/scss/fonts.scss";
-
   .content {
     @include row();
     justify-content: space-between;

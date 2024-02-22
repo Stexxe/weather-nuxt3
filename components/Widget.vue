@@ -1,8 +1,13 @@
 <script setup lang="ts">
-  const city = ref("Limassol");
+  type Geo = {
+    lat: number,
+    lon: number
+  }
+
+  const city = ref("Moscow");
   const geoUrl = computed(() =>`/api/geo?q=${city.value}`)
   const geoResponse = await useFetch(geoUrl, {watch: [geoUrl]})
-  const geo = computed(() => geoResponse.data.value)
+  const geo = computed(() => geoResponse.data.value as Geo)
   const forecastUrl = computed(() => `/api/forecast?lat=${geo.value?.lat}&lon=${geo.value?.lon}`)
   const forecastResponse = await useFetch(forecastUrl, {watch: [forecastUrl]})
   const data = computed(() => forecastResponse.data.value)
@@ -26,6 +31,8 @@
 </template>
 
 <style scoped lang="scss">
+  @use "~/assets/scss/fonts.scss";
+
   .widget {
     @include column();
     white-space:nowrap;
